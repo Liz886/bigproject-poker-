@@ -3,7 +3,7 @@
 # Created by: Raf
 
 # 这个文件用来辅助调整截图区域坐标。运行游戏，全屏截图，放上路径，就可以查看截图区域。
-
+# %%
 import cv2
 import numpy as np
 
@@ -18,7 +18,7 @@ capture_pos = [(430, 1052, 1630, 95),    # 玩家区域
                ]
 img_path = r'C:\Users\32546\Pictures\Screenshots\屏幕截图 2025-07-07 000017.png'
 
-
+# %%
 img = cv2.imdecode(np.fromfile(img_path, dtype=np.uint8), -1)
 for pos in capture_pos:
     img = cv2.rectangle(img, pos[0:2], (pos[0] + pos[2], pos[1] + pos[3]), (0, 0, 255), 3)

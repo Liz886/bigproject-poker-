@@ -58,10 +58,10 @@ class MyPyQT_Form(QtWidgets.QWidget, Ui_Form):
         self.SleepTime = 0.1  # 循环中睡眠时间
 
         # 坐标
-        self.MyHandCardsPos = (250, 752, 1630, 95)  # 我的截图区域
-        self.LPlayedCardsPos = (280, 308, 700, 220)  # 左边截图区域
-        self.RPlayedCardsPos = (1010, 300, 700, 200)  # 右边截图区域
-        self.LandlordFlagPos = [(1420, 160, 110, 140), (200, 650, 110, 140),  (400, 100, 110, 140)]  # 地主标志截图区域(右-我-左)
+        self.MyHandCardsPos = (290, 738, 1280, 260)  # 我的截图区域
+        self.LPlayedCardsPos = (430, 350, 400, 180)  # 左边截图区域
+        self.RPlayedCardsPos = (1100, 350, 400, 180)  # 右边截图区域
+        self.LandlordFlagPos = [(1420, 160, 110, 140), (200, 650, 90, 140),  (400, 100, 100, 140)]  # 地主标志截图区域(右-我-左)
         self.ThreeLandlordCardsPos = (770, 55, 370, 160)      # 地主底牌截图区域，resize成349x168
 
         # 信号量
